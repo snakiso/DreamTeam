@@ -1,33 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 37.95 26.98">
-  <defs>
-    <style>
-      .cls-1 {
-        filter: url(#drop-shadow-1);
-      }
-
-      .cls-2 {
-        fill: none;
-        stroke: #f1c396;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 1.42px;
-      }
-    </style>
-    <filter id="drop-shadow-1" filterUnits="userSpaceOnUse">
-      <feOffset dx="5" dy="5"/>
-      <feGaussianBlur result="blur" stdDeviation="5"/>
-      <feFlood flood-color="#000" flood-opacity=".45"/>
-      <feComposite in2="blur" operator="in"/>
-      <feComposite in="SourceGraphic"/>
-    </filter>
-  </defs>
-  <g id="_лой_1" data-name="Слой 1"/>
-  <g id="_лой_2" data-name="Слой 2">
-    <g id="Layer_1" data-name="Layer 1">
-      <g style="filter: url(#drop-shadow-1);">
-        <polyline points=".71 15.3 11.68 26.27 37.24 .71" style="fill: none; stroke: #f1c396; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.42px;"/>
-      </g>
-    </g>
+<svg id="uuid-f03a786a-8f4b-451d-8e72-702171919f0c" data-name="Слой 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37.95 26.98">
+  <g id="uuid-2d6b2a18-9dfd-4e32-a9c2-26b26b50223b" data-name="Layer 1">
+    <polyline points=".71 15.3 11.68 26.27 37.24 .71" style="fill: none; stroke: #f1c396; stroke-linecap: round; stroke-linejoin: round; stroke-width: 1.42px;"/>
   </g>
 </svg>

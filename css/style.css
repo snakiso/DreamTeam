@@ -140,6 +140,14 @@
   height: 600px;
   width: 600px;
   position: relative;
+  opacity: 0;
+  transform: translateY(100px);
+  transition: all 1.5s;
+}
+
+.team__member.animated {
+  opacity: 1;
+  transform: translateY(0px);
 }
 
 .team__button {
@@ -348,8 +356,10 @@
   background-position: center center;
   position: absolute;
   display: block;
-  width: 30px;
-  height: 30px;
+  width: 38px;
+  height: 23px;
+  left: 2px;
+  bottom: 6px;
   opacity: 0;
 }
 

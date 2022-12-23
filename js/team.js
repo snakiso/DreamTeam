@@ -2,6 +2,7 @@ let team = document.querySelector('.team__wrapper');
 let popup = document.querySelector('.popup');
 let select = document.querySelector('.select');
 
+
 async function createElem() {
  let url = `./files/team.json`
  let response = await fetch(url)
@@ -10,6 +11,7 @@ async function createElem() {
  for (let i = 0; i < json.length; i++) {
   let member = document.createElement("div");
   member.className = 'team__member';
+  member.setAttribute('data-animation-container', '')
 
   let firstName = document.createElement("span");
   firstName.className = 'team__firstName';
@@ -79,6 +81,12 @@ async function createElem() {
   })
  }
 
+ var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container], [data-animation-start]');
+ $('[data-animation-start]').scrollAnimations({
+  offset: 0.5
+ });
+ $containers.scrollAnimations();
+
 }
 
 createElem()
@@ -87,3 +95,4 @@ let close = document.querySelector('.close');
 close.addEventListener('click', () => {
  popup.style.top = '-100%'
 })
+

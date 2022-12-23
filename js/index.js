@@ -8,6 +8,9 @@ let teamBlock = document.querySelector('.team');
 const screenWidth = window.screen.width
 
 
+
+
+
 switcher.addEventListener('click', () => {
  teamBlock.classList.toggle('light');
  title.classList.toggle('light');
@@ -52,4 +55,5 @@ function changeBg() {
   }
  }
 }
+
 
