@@ -29,26 +29,26 @@ function changeBg() {
  const img = new Image();
  if (!switchPoint.classList.contains('light')){
   if(screenWidth > 650){
-   img.src = '../img/1x/Bg-light.png'
+   img.src = './img/1x/Bg-light.png'
    img.onload = () => {
-    body.style.backgroundImage = `url(../img/1x/Bg-light.png)`
+    body.style.backgroundImage = `url(./img/1x/Bg-light.png)`
    };
   }else{
-   img.src = '../img/1x/bg-light-mobile.png'
+   img.src = './img/1x/bg-light-mobile.png'
    img.onload = () => {
-    body.style.backgroundImage = `url(../img/1x/bg-light-mobile.png)`
+    body.style.backgroundImage = `url(./img/1x/bg-light-mobile.png)`
    };
   }
  }else{
   if(screenWidth > 650){
-   img.src = '../img/1x/Bg-dark.png'
+   img.src = './img/1x/Bg-dark.png'
    img.onload = () => {
-    body.style.backgroundImage = `url(../img/1x/Bg-dark.png)`
+    body.style.backgroundImage = `url(./img/1x/Bg-dark.png)`
    };
   }else{
-   img.src = '../img/1x/bg-dark-mobile.png'
+   img.src = './img/1x/bg-dark-mobile.png'
    img.onload = () => {
-    body.style.backgroundImage = `url(../img/1x/bg-dark-mobile.png)`
+    body.style.backgroundImage = `url(./img/1x/bg-dark-mobile.png)`
    };
   }
  }
@@ -57,15 +57,15 @@ function changeBg() {
 function firstBg(){
  if(screenWidth > 650){
  const img = new Image();
- img.src = '../img/1x/Bg-dark.png'
+ img.src = './img/1x/Bg-dark.png'
  img.onload = () => {
-  body.style.backgroundImage = `url(../img/1x/Bg-dark.png)`
+  body.style.backgroundImage = `url(./img/1x/Bg-dark.png)`
  };
  }else{
   const img = new Image();
-  img.src = '../img/1x/bg-dark-mobile.png'
+  img.src = './img/1x/bg-dark-mobile.png'
   img.onload = () => {
-   body.style.backgroundImage = `url(../img/1x/bg-dark-mobile.png)`
+   body.style.backgroundImage = `url(./img/1x/bg-dark-mobile.png)`
  }
 }
 }
