@@ -46,11 +46,18 @@ async function createElem() {
   p.className = 'team__description'
   p.textContent = json[i].Description
 
-  let button = document.createElement('span');
+  let button = document.createElement('button');
   button.className = 'team__button'
+  button.dataset.value = json[i].Value
   button.innerHTML = 'Поздравить'
 
+  button.addEventListener('click', () => {
+   select.value = button.dataset.value
+  })
+ 
+
   let option = document.createElement('option');
+  option.value = json[i].Value
   option.textContent = `${json[i].FirstName}  ${json[i].SecondName}`
 
   select.appendChild(option)
