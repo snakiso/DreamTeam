@@ -150,6 +150,10 @@
   transform: translateY(0px);
 }
 
+.team .tr-delay {
+  transition-delay: 0.2s;
+}
+
 .team__button {
   position: absolute;
   bottom: 30px;
@@ -635,7 +639,7 @@ p {
 
   .team__description {
     width: calc(100% - 60px);
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .team__decor {

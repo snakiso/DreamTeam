@@ -11,7 +11,9 @@ async function createElem() {
  for (let i = 0; i < json.length; i++) {
   let member = document.createElement("div");
   member.className = 'team__member';
+  member.dataset.value = json[i].Value
   member.setAttribute('data-animation-container', '')
+ 
 
   let firstName = document.createElement("span");
   firstName.className = 'team__firstName';
@@ -81,6 +83,8 @@ async function createElem() {
   })
  }
 
+ addClass()
+
  var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container], [data-animation-start]');
  $('[data-animation-start]').scrollAnimations({
   offset: 0.5
@@ -90,6 +94,15 @@ async function createElem() {
 }
 
 createElem()
+
+function addClass(){
+ let member = document.querySelectorAll('.team__member')
+ for(let i = 0; i < member.length; i++){
+  if(+member[i].dataset.value % 2 == 0){
+   member[i].classList.add('tr-delay')
+  }
+ }
+}
 
 let close = document.querySelector('.close');
 close.addEventListener('click', () => {
