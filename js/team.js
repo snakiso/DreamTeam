@@ -1,5 +1,6 @@
 let team = document.querySelector('.team__wrapper');
 let popup = document.querySelector('.popup');
+let select = document.querySelector('.select');
 
 async function createElem() {
  let url = `./files/team.json`
@@ -49,7 +50,10 @@ async function createElem() {
   button.className = 'team__button'
   button.innerHTML = 'Поздравить'
 
+  let option = document.createElement('option');
+  option.textContent = `${json[i].FirstName}  ${json[i].SecondName}`
 
+  select.appendChild(option)
   team.appendChild(member)
   member.appendChild(photo)
   photo.appendChild(snowflakes)

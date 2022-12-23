@@ -4,7 +4,7 @@
  <meta charset="UTF-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
  <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="stylesheet" href="css/style.min.css?_v=20221222141006">
+ <link rel="stylesheet" href="css/style.min.css?_v=20221223092225">
  <title>Главная</title>
 </head>
 <body class="body">
@@ -18,7 +18,22 @@
    <p>Отправить анонимно <input type="checkbox" class="checkbox"><span class="custom-checkbox"></span></p>
   </div>
   <div class="popup__list">
-   <p>Поздравление будет отправлено <select name="" id=""></select></p>
+   <p>Поздравление будет отправлено 
+    <select name="" class="select" >
+     <option value="">Список</option>
+    </select>
+   </p>
+  </div>
+  <div class="popup__send">
+   <div class="captcha-block">
+    <p><input type="checkbox" name="" id=""> Я не робот</p>
+    <img src="img/1x/recaptcha.png" alt="">
+    <div class="captcha-links">
+     <a href="#">Конфиденциальность</a>
+     <a href="#">Условия пользования</a>
+    </div>
+   </div>
+   <input type="submit" value="Отправить" class="submit">
   </div>
  </form>
 </div>
@@ -48,7 +63,7 @@
  </div>
 </div>
 </main>
-<script src="js/index.js?_v=20221222141006"></script>
-<script src="js/team.js?_v=20221222141006"></script>
+<script src="js/index.js?_v=20221223092225"></script>
+<script src="js/team.js?_v=20221223092225"></script>
 </body>
 </html>
