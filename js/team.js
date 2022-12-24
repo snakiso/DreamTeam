@@ -23,8 +23,8 @@ async function createElem() {
   secondName.className = 'team__secondName'
   secondName.textContent = json[i].SecondName
 
-  let border = document.createElement('div');
-  border.className = 'team__border';
+  // let border = document.createElement('div');
+  // border.className = 'team__border';
 
   let decor = document.createElement('img');
   decor.className = 'team__decor';
@@ -68,12 +68,11 @@ async function createElem() {
   team.appendChild(member)
   member.appendChild(photo)
   photo.appendChild(snowflakes)
-  member.appendChild(border)
-  border.appendChild(firstName)
-  border.appendChild(secondName)
-  border.appendChild(p)
-  border.appendChild(button)
-  border.appendChild(decor)
+  member.appendChild(firstName)
+  member.appendChild(secondName)
+  member.appendChild(p)
+  member.appendChild(button)
+  member.appendChild(decor)
 
  
 

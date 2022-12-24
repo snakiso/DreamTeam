@@ -123,7 +123,7 @@
 }
 
 .team {
-  margin-top: 60px;
+  margin-top: 180px;
   padding-bottom: 100px;
 }
 
@@ -133,16 +133,17 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  row-gap: 60px;
+  row-gap: 160px;
 }
 
 .team__member {
-  height: 600px;
+  min-height: 540px;
   width: 600px;
   position: relative;
   opacity: 0;
   transform: translateY(100px);
-  transition: all 1.5s;
+  transition: all 1s;
+  border: 2px solid white;
 }
 
 .team__member.animated {
@@ -171,7 +172,7 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 520px;
+  min-height: 520px;
   border: 2px solid white;
   transition: all 0.5s;
 }
@@ -191,6 +192,7 @@
   background-size: contain;
   position: absolute;
   left: 30px;
+  top: -95px;
   z-index: 2;
   transition: background-image 1s ease-in-out;
 }
@@ -226,13 +228,14 @@
   line-height: 140%;
   color: white;
   transition: all 0.5s;
+  padding-bottom: 80px;
 }
 
 .team__description.light {
   color: black;
 }
 
-.team.light span {
+.team.light button {
   color: #F2C76B;
 }
 
@@ -240,7 +243,7 @@
   color: black;
 }
 
-.team.light .team__border {
+.team.light .team__member {
   border: 2px solid #F2C76B;
 }
 
@@ -465,6 +468,10 @@
   min-height: 100vh;
 }
 
+.load {
+  opacity: 0;
+}
+
 .body.light {
   background-image: url(../img/1x/Bg-light.png);
 }
@@ -518,7 +525,7 @@ p {
   .header .switch {
     left: 10px;
     right: auto;
-    top: -115%;
+    top: -130%;
   }
 
   .title h1 {
@@ -531,6 +538,7 @@ p {
 
   .team__member {
     width: calc(100% - 50px);
+    min-height: 300px;
   }
 
   .team__firstName,
@@ -607,6 +615,10 @@ p {
     margin-top: 150px;
   }
 
+  .header .switch {
+    top: -115%;
+  }
+
   .title h1 {
     font-size: 42px;
   }
@@ -617,7 +629,7 @@ p {
 
   .team__member {
     width: calc(100% - 50px);
-    height: 520px;
+    min-height: -300px;
   }
 
   .team__firstName,
@@ -629,7 +641,7 @@ p {
   .team__photo {
     width: 110px;
     height: 160px;
-    top: 30px;
+    top: -60px;
   }
 
   .team__photo img {
@@ -663,6 +675,6 @@ p {
   }
 
   .team__border {
-    height: 450px;
+    min-height: 510px;
   }
 }
