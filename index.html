@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
- <meta charset="UTF-8">
- <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
- <link rel="shortcut icon" href="./img/1x/favicon.png" type="image/x-icon">
- <link rel="preload" as="image" href="img/1x/Bg-dark.png">
- <link rel="preload" as="image" href="img/1x/Bg-light.png">
- <link rel="preload" as="image" href="img/1x/bg-dark-mobile.png">
- <link rel="preload" as="image" href="img/1x/bg-light-mobile.png">
- <link rel="stylesheet" href="css/style.min.css?_v=20221226104453">
- <script src="./js/jQuery2.2.0.js?_v=20221226104453"></script>
- <script src="./js/ScrollAnimations.js?_v=20221226104453"></script>
- <title>Главная</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="./img/1x/favicon.png" type="image/x-icon">
+  <link rel="preload" as="image" href="./img/1x/Bg-light.png">
+  <link rel="preload" as="image" href="./img/1x/bg-light-mobile.png">
+  <link rel="prefetch" as="image" href="./img/1x/Bg-dark.png">
+  <link rel="prefetch" as="image" href="./img/1x/bg-dark-mobile.png">
+  <link rel="stylesheet" href="css/style.min.css?_v=20221226104453">
+  <script src="./js/jQuery2.2.0.js?_v=20221226104453"></script>
+  <script src="./js/ScrollAnimations.js?_v=20221226104453"></script>
+  <title>Главная</title>
 </head>
+
 <body class="body light">
-<div class="popup">
- <div class="close"></div>
- <span>Напишите поздравление</span>
- <form action="#" method="post">
-  <textarea name="text" class="popup__text" placeholder="Введите текст"></textarea>
-  <div class="popup__name">
-   <p>От кого<input type="text" name="name" class="name" placeholder="Введите свое имя"></p>
-   <p>Отправить анонимно <input type="checkbox" class="checkbox"><span class="custom-checkbox"></span></p>
+  <div class="popup">
+    <div class="close"></div>
+    <span>Напишите поздравление</span>
+    <form action="#" method="post">
+      <textarea name="text" class="popup__text" placeholder="Введите текст"></textarea>
+      <div class="popup__name">
+        <p>От кого<input type="text" name="name" class="name" placeholder="Введите свое имя"></p>
+        <p>Отправить анонимно <input type="checkbox" class="checkbox"><span class="custom-checkbox"></span></p>
+      </div>
+      <div class="popup__list">
+        <p>Поздравление будет отправлено
+          <select name="" class="select">
+            <option value="">Список</option>
+          </select>
+        </p>
+      </div>
+      <div class="popup__send">
+        <div class="captcha-block">
+          <p><input type="checkbox" name="" id=""> Я не робот</p>
+          <img src="img/1x/recaptcha.png" alt="">
+          <div class="captcha-links">
+            <a href="#">Конфиденциальность</a>
+            <a href="#">Условия пользования</a>
+          </div>
+        </div>
+        <input type="submit" value="Отправить" class="submit" disabled>
+      </div>
+      <input type="email" name="email" class="email">
+    </form>
   </div>
-  <div class="popup__list">
-   <p>Поздравление будет отправлено 
-    <select name="" class="select" >
-     <option value="">Список</option>
-    </select>
-   </p>
-  </div>
-  <div class="popup__send">
-   <div class="captcha-block">
-    <p><input type="checkbox" name="" id=""> Я не робот</p>
-    <img src="img/1x/recaptcha.png" alt="">
-    <div class="captcha-links">
-     <a href="#">Конфиденциальность</a>
-     <a href="#">Условия пользования</a>
+  <header class="header light">
+    <div class="header__wrapper">
+      <div class="header__decor">
+      </div>
+      <div class="header__logos light">
+        <a href="#"><img src="img/SVG/BD-light.svg" alt="" class="logo"></a>
+        <a href="#"><img src="img/SVG/lider-light.svg" alt="" class="logo"></a>
+      </div>
+      <div class="switch light">
+        <div class="switch__point light">
+        </div>
+        <span class="switch__theme light">
+          Light
+        </span>
+      </div>
     </div>
-   </div>
-   <input type="submit" value="Отправить" class="submit" disabled>
-  </div>
-  <input type="email" name="email" class="email">
- </form>
-</div>
-<header class="header light">
- <div class="header__wrapper">
-  <div class="header__decor">
-  </div>
-  <div class="header__logos light">
-   <a href="#"><img src="img/SVG/BD-light.svg" alt="" class="logo"></a>
-   <a href="#"><img src="img/SVG/lider-light.svg" alt="" class="logo"></a>
-  </div>
-  <div class="switch light">
-   <div class="switch__point light">
-   </div>
-   <span class="switch__theme light">
-    Light
-   </span>
-  </div>
- </div>
-</header>
-<main class="main">
- <div class="title light">
- <h1>DREAM TEAM</h1>
- <h2>Winter Edition</h2>
-</div>
-  <div class="team light">
- <div class="team__wrapper" data-animation-container>
-  
- </div>
-</div>
-</main>
-<script src="js/team.js?_v=20221226104453"></script>
-<script src="js/index.js?_v=20221226104453"></script>
-<script src="js/popup.js?_v=20221226104453"></script>
+  </header>
+  <main class="main">
+    <div class="title light">
+      <h1>DREAM TEAM</h1>
+      <h2>Winter Edition</h2>
+    </div>
+    <div class="team light">
+      <div class="team__wrapper" data-animation-container>
+
+      </div>
+    </div>
+  </main>
+  <script src="js/team.js?_v=20221226104453"></script>
+  <script src="js/index.js?_v=20221226104453"></script>
+  <script src="js/popup.js?_v=20221226104453"></script>
 </body>
+
 </html>
