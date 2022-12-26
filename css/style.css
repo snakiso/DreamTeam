@@ -209,12 +209,14 @@
 }
 
 .team__photo .photo-1 {
-  z-index: 5;
+  opacity: 0;
+  z-index: 4;
   transition: all 0.5s;
 }
 
 .team__photo .photo-2 {
-  opacity: 0;
+  opacity: 1;
+  z-index: 5;
   transition: all 0.5s;
 }
 
@@ -228,13 +230,13 @@
 }
 
 .team__photo:hover .photo-1 {
-  z-index: 4;
-  opacity: 0;
+  z-index: 5;
+  opacity: 1;
 }
 
 .team__photo:hover .photo-2 {
-  opacity: 1;
-  z-index: 5;
+  opacity: 0;
+  z-index: 4;
 }
 
 .team__firstName,
@@ -277,6 +279,26 @@
 
 .team.light .team__member {
   border: 2px solid #F2C76B;
+}
+
+.team.light .team__photo .photo-1 {
+  opacity: 1;
+  z-index: 5;
+}
+
+.team.light .team__photo .photo-2 {
+  opacity: 0;
+  z-index: 4;
+}
+
+.team.light .team__photo:hover .photo-1 {
+  opacity: 0;
+  z-index: 4;
+}
+
+.team.light .team__photo:hover .photo-2 {
+  opacity: 1;
+  z-index: 5;
 }
 
 .popup {
