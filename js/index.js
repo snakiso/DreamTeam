@@ -5,6 +5,7 @@ let body = document.querySelector('.body');
 let logo = document.querySelector('.header__logos');
 let title = document.querySelector('.title');
 let teamBlock = document.querySelector('.team');
+let header = document.querySelector('.header')
 const screenWidth = window.screen.width
 
 
@@ -12,11 +13,11 @@ const screenWidth = window.screen.width
 
 
 switcher.addEventListener('click', () => {
+ header.classList.toggle('light');
  teamBlock.classList.toggle('light');
  title.classList.toggle('light');
  logo.classList.toggle('light');
  switcher.classList.toggle('light');
- //changeBg()
  body.classList.toggle('light');
  switchPoint.classList.toggle('light');
  switchTheme.classList.toggle('light');

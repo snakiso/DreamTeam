@@ -2,6 +2,10 @@
   margin-top: 55px;
 }
 
+.header__decor {
+  display: none;
+}
+
 .header__wrapper {
   max-width: 1000px;
   height: 100px;
@@ -224,11 +228,13 @@
 }
 
 .team__photo:hover .photo-1 {
+  z-index: 4;
   opacity: 0;
 }
 
 .team__photo:hover .photo-2 {
   opacity: 1;
+  z-index: 5;
 }
 
 .team__firstName,
@@ -544,14 +550,52 @@ p {
 }
 
 @media screen and (max-width: 650px) {
+  .header.light {
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+  .header.light .header__decor {
+    background-image: url(../img/1x/snowman.png);
+    right: 25px;
+    top: 20px;
+  }
+
   .header {
-    margin-top: 180px;
+    margin: 0;
+    height: 80px;
+    background: rgba(0, 0, 0, 0.5);
+    transition: all 0.5s;
+  }
+
+  .header__decor {
+    display: block;
+    position: absolute;
+    width: 120px;
+    height: 150px;
+    background-repeat: no-repeat;
+    background-image: url(../img/1x/snowflake.png);
+    background-size: auto;
+    right: 0;
+    top: -25px;
+    transition: all 0.5s;
+  }
+
+  .header__wrapper {
+    height: 100%;
+  }
+
+  .header__logos {
+    position: relative;
+    top: 140px;
   }
 
   .header .switch {
     left: 10px;
     right: auto;
-    top: -130%;
+  }
+
+  .title {
+    margin-top: 225px;
   }
 
   .title h1 {
@@ -637,12 +681,17 @@ p {
 }
 
 @media screen and (max-width: 450px) {
-  .header {
-    margin-top: 150px;
+  .header.light {
+    background: rgba(255, 255, 255, 0.5);
   }
 
-  .header .switch {
-    top: -115%;
+  .header.light .header__decor {
+    background-image: url(../img/1x/snowman.png);
+    right: 0px;
+    top: 40px;
+    background-size: contain;
+    width: 80px;
+    height: 100px;
   }
 
   .title h1 {
