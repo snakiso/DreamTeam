@@ -16,7 +16,7 @@ switcher.addEventListener('click', () => {
  title.classList.toggle('light');
  logo.classList.toggle('light');
  switcher.classList.toggle('light');
- changeBg()
+ //changeBg()
  body.classList.toggle('light');
  switchPoint.classList.toggle('light');
  switchTheme.classList.toggle('light');
@@ -26,34 +26,5 @@ switcher.addEventListener('click', () => {
   switchTheme.innerHTML = 'Dark'
  }
 })
-
-function changeBg() {
- const img = new Image();
- if (!switchPoint.classList.contains('light')){
-  if(screenWidth > 650){
-   img.src = '../img/1x/Bg-light.png'
-   img.onload = () => {
-    body.style.backgroundImage = `url(../img/1x/Bg-light.png)`
-   };
-  }else{
-   img.src = '../img/1x/bg-light-mobile.png'
-   img.onload = () => {
-    body.style.backgroundImage = `url(../img/1x/bg-light-mobile.png)`
-   };
-  }
- }else{
-  if(screenWidth > 650){
-   img.src = '../img/1x/Bg-dark.png'
-   img.onload = () => {
-    body.style.backgroundImage = `url(../img/1x/Bg-dark.png)`
-   };
-  }else{
-   img.src = '../img/1x/bg-dark-mobile.png'
-   img.onload = () => {
-    body.style.backgroundImage = `url(../img/1x/bg-dark-mobile.png)`
-   };
-  }
- }
-}
 
 

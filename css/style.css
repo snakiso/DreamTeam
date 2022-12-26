@@ -197,12 +197,38 @@
   transition: background-image 1s ease-in-out;
 }
 
+.team__photo .photo-1,
+.team__photo .photo-2 {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.team__photo .photo-1 {
+  z-index: 5;
+  transition: all 0.5s;
+}
+
+.team__photo .photo-2 {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
 .team__photo img {
   width: 90px;
   height: 100px;
   position: absolute;
   bottom: 10px;
   right: 10px;
+  z-index: 6;
+}
+
+.team__photo:hover .photo-1 {
+  opacity: 0;
+}
+
+.team__photo:hover .photo-2 {
+  opacity: 1;
 }
 
 .team__firstName,
@@ -257,6 +283,10 @@
   background: white;
   z-index: 5;
   transition: all 1s;
+}
+
+.popup .email {
+  visibility: hidden;
 }
 
 .popup span {
@@ -466,10 +496,6 @@
   background-size: 100% auto;
   transition: background-image 1s ease-in-out;
   min-height: 100vh;
-}
-
-.load {
-  opacity: 0;
 }
 
 .body.light {
