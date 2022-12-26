@@ -75,6 +75,12 @@ async function createElem() {
     let option = document.createElement('option');
     option.value = json[i].Value
     option.textContent = `${json[i].FirstName}  ${json[i].SecondName}`
+    
+    //Нажатие на имя из списка
+    select.addEventListener('change', function (e) {
+      document.querySelector('.email').value = json[e.target.value - 1].Email
+    })
+
 
     //Добавление в верстку  
     select.appendChild(option)
@@ -93,7 +99,7 @@ async function createElem() {
 
   addClass()
 
-
+ 
   //Инициализация ScrollAnimation
   var $containers = $('[data-animation]:not([data-animation-child]), [data-animation-container], [data-animation-start]');
   $('[data-animation-start]').scrollAnimations({
